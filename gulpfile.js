@@ -17,4 +17,5 @@ elixir(function (mix) {
     .browserify('app.js')
     .copy('node_modules/font-awesome/fonts', 'public/fonts')
     .copy('node_modules/bootstrap-sass/assets/fonts', 'public/fonts')
+    .browserSync({proxy: 'http://dev:8000'})
 })

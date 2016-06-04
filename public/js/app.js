@@ -12106,6 +12106,11 @@ exports.insert = function (css) {
 }
 
 },{}],6:[function(require,module,exports){
+'use strict';
+
+require('../../../vue/app');
+
+},{"../../../vue/app":8}],7:[function(require,module,exports){
 var __vueify_insert__ = require("vueify/lib/insert-css")
 var __vueify_style__ = __vueify_insert__.insert("\nbody {\n  font-family: Helvetica, sans-serif;\n}\n")
 'use strict';
@@ -12144,7 +12149,7 @@ exports.default = {
   }
 };
 if (module.exports.__esModule) module.exports = module.exports.default
-;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n  <div class=\"container\" id=\"app-body\">\n    <div class=\"jumbotron\">\n\t\t\t<hello :msg=\"helloMsg\"></hello>\n      <p>{{ someText }}</p>\n    </div>\n    <div>\n      <div class=\"form-group\">\n        <label for=\"hello\" class=\"col-sm-2 control-label\">Hello:</label> \n        <div class=\"col-sm-10\">\n          <input id=\"sometext\" v-model=\"helloMsg\" class=\"form-control\">\n        </div>\n      </div>\n      <div class=\"form-group\">\n        <label for=\"sometext\" class=\"col-sm-2 control-label\">Sometext:</label> \n        <div class=\"col-sm-10\">\n          <input id=\"sometext\" v-model=\"someText\" class=\"form-control\">\n        </div>\n      </div>\n    </div>\n\t\t<div>\n\t\t<button @click=\"getData\">Get Data</button>\n    <pre>{{ users | json }}</pre>\n\t\t</div>\n  </div>\n"
+;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n  <div class=\"container\" id=\"app-body\">\n    <div class=\"jumbotron\">\n\t\t\t<hello :msg=\"helloMsg\"></hello>\n      <p>{{ someText }}</p>\n    </div>cssdfc\n    <div>\n      <div class=\"form-group\">\n        <label for=\"hello\" class=\"col-sm-2 control-label\">Hello:</label> \n        <div class=\"col-sm-10\">\n          <input id=\"sometext\" v-model=\"helloMsg\" class=\"form-control\">\n        </div>\n      </div>\n      <div class=\"form-group\">\n        <label for=\"sometext\" class=\"col-sm-2 control-label\">Sometext:</label> \n        <div class=\"col-sm-10\">\n          <input id=\"sometext\" v-model=\"someText\" class=\"form-control\">\n        </div>\n      </div>\n    </div>\n\t\t<div>\n\t\t<button @click=\"getData\">Get Data</button>\n    <pre>{{ users | json }}</pre>\n\t\t</div>\n  </div>\n"
 if (module.hot) {(function () {  module.hot.accept()
   var hotAPI = require("vue-hot-reload-api")
   hotAPI.install(require("vue"), true)
@@ -12154,12 +12159,12 @@ if (module.hot) {(function () {  module.hot.accept()
     document.head.removeChild(__vueify_style__)
   })
   if (!module.hot.data) {
-    hotAPI.createRecord("_v-6ff51432", module.exports)
+    hotAPI.createRecord("_v-4b529a35", module.exports)
   } else {
-    hotAPI.update("_v-6ff51432", module.exports, (typeof module.exports === "function" ? module.exports.options : module.exports).template)
+    hotAPI.update("_v-4b529a35", module.exports, (typeof module.exports === "function" ? module.exports.options : module.exports).template)
   }
 })()}
-},{"./components/Hello.vue":8,"vue":4,"vue-hot-reload-api":2,"vueify/lib/insert-css":5}],7:[function(require,module,exports){
+},{"./components/Hello.vue":9,"vue":4,"vue-hot-reload-api":2,"vueify/lib/insert-css":5}],8:[function(require,module,exports){
 'use strict';
 
 var _vue = require('vue');
@@ -12184,9 +12189,9 @@ new _vue2.default({
   components: { App: _App2.default }
 });
 
-},{"./App.vue":6,"vue":4,"vue-resource":3}],8:[function(require,module,exports){
+},{"./App.vue":7,"vue":4,"vue-resource":3}],9:[function(require,module,exports){
 var __vueify_insert__ = require("vueify/lib/insert-css")
-var __vueify_style__ = __vueify_insert__.insert("\nh1[_v-c23b01d0] {\n  color: #42b983;\n}\n")
+var __vueify_style__ = __vueify_insert__.insert("\nh1[_v-de9e0f30] {\n  color: #42b983;\n}\n")
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -12196,21 +12201,21 @@ exports.default = {
   props: ['msg']
 };
 if (module.exports.__esModule) module.exports = module.exports.default
-;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<div class=\"hello\" _v-c23b01d0=\"\">\n  <h1 _v-c23b01d0=\"\">{{ msg }}</h1>\n</div>\n"
+;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<div class=\"hello\" _v-de9e0f30=\"\">\n  <h1 _v-de9e0f30=\"\">{{ msg }}</h1>\n</div>\n"
 if (module.hot) {(function () {  module.hot.accept()
   var hotAPI = require("vue-hot-reload-api")
   hotAPI.install(require("vue"), true)
   if (!hotAPI.compatible) return
   module.hot.dispose(function () {
-    __vueify_insert__.cache["\nh1[_v-c23b01d0] {\n  color: #42b983;\n}\n"] = false
+    __vueify_insert__.cache["\nh1[_v-de9e0f30] {\n  color: #42b983;\n}\n"] = false
     document.head.removeChild(__vueify_style__)
   })
   if (!module.hot.data) {
-    hotAPI.createRecord("_v-c23b01d0", module.exports)
+    hotAPI.createRecord("_v-de9e0f30", module.exports)
   } else {
-    hotAPI.update("_v-c23b01d0", module.exports, (typeof module.exports === "function" ? module.exports.options : module.exports).template)
+    hotAPI.update("_v-de9e0f30", module.exports, (typeof module.exports === "function" ? module.exports.options : module.exports).template)
   }
 })()}
-},{"vue":4,"vue-hot-reload-api":2,"vueify/lib/insert-css":5}]},{},[7]);
+},{"vue":4,"vue-hot-reload-api":2,"vueify/lib/insert-css":5}]},{},[6]);
 
 //# sourceMappingURL=app.js.map

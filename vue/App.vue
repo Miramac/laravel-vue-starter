@@ -3,7 +3,7 @@
     <div class="jumbotron">
 			<hello :msg="helloMsg"></hello>
       <p>{{ someText }}</p>
-    </div>
+    </div>cssdfc
     <div>
       <div class="form-group">
         <label for="hello" class="col-sm-2 control-label">Hello:</label> 
