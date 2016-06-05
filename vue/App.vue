@@ -2,7 +2,7 @@
   <div class="container" id="app-body">
     <div class="jumbotron">
 			<hello :msg="helloMsg"></hello>
-      <p>{{ someText }}</p>
+      <p>{{{ someText }}}</p>
     </div>cssdfc
     <div>
       <div class="form-group">

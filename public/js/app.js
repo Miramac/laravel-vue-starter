@@ -12149,7 +12149,7 @@ exports.default = {
   }
 };
 if (module.exports.__esModule) module.exports = module.exports.default
-;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n  <div class=\"container\" id=\"app-body\">\n    <div class=\"jumbotron\">\n\t\t\t<hello :msg=\"helloMsg\"></hello>\n      <p>{{ someText }}</p>\n    </div>cssdfc\n    <div>\n      <div class=\"form-group\">\n        <label for=\"hello\" class=\"col-sm-2 control-label\">Hello:</label> \n        <div class=\"col-sm-10\">\n          <input id=\"sometext\" v-model=\"helloMsg\" class=\"form-control\">\n        </div>\n      </div>\n      <div class=\"form-group\">\n        <label for=\"sometext\" class=\"col-sm-2 control-label\">Sometext:</label> \n        <div class=\"col-sm-10\">\n          <input id=\"sometext\" v-model=\"someText\" class=\"form-control\">\n        </div>\n      </div>\n    </div>\n\t\t<div>\n\t\t<button @click=\"getData\">Get Data</button>\n    <pre>{{ users | json }}</pre>\n\t\t</div>\n  </div>\n"
+;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n  <div class=\"container\" id=\"app-body\">\n    <div class=\"jumbotron\">\n\t\t\t<hello :msg=\"helloMsg\"></hello>\n      <p>{{{ someText }}}</p>\n    </div>cssdfc\n    <div>\n      <div class=\"form-group\">\n        <label for=\"hello\" class=\"col-sm-2 control-label\">Hello:</label> \n        <div class=\"col-sm-10\">\n          <input id=\"sometext\" v-model=\"helloMsg\" class=\"form-control\">\n        </div>\n      </div>\n      <div class=\"form-group\">\n        <label for=\"sometext\" class=\"col-sm-2 control-label\">Sometext:</label> \n        <div class=\"col-sm-10\">\n          <input id=\"sometext\" v-model=\"someText\" class=\"form-control\">\n        </div>\n      </div>\n    </div>\n\t\t<div>\n\t\t<button @click=\"getData\">Get Data</button>\n    <pre>{{ users | json }}</pre>\n\t\t</div>\n  </div>\n"
 if (module.hot) {(function () {  module.hot.accept()
   var hotAPI = require("vue-hot-reload-api")
   hotAPI.install(require("vue"), true)
@@ -12184,6 +12184,7 @@ function _interopRequireDefault(obj) {
 }
 
 _vue2.default.use(_vueResource2.default);
+
 new _vue2.default({
   el: '#app',
   components: { App: _App2.default }
