@@ -18,3 +18,7 @@ Route::get('/', function () {
 Route::get('/api/users', function () {
     return [['id' => 1, 'name' => 'Fabi'], ['id' => 2, 'name' => 'Peter']];
 });
+
+Route::auth();
+
+Route::get('/home', 'HomeController@index');
