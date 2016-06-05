@@ -7955,4 +7955,10 @@ button.close {
   overflow: visible;
   clip: auto; }
 
+body {
+  font-family: 'Lato'; }
+
+.fa-btn {
+  margin-right: 6px; }
+
 /*# sourceMappingURL=app.css.map */

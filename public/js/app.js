@@ -12129,10 +12129,9 @@ exports.default = {
   components: {
     Hello: _Hello2.default
   },
+  props: ['title', 'msg'],
   data: function data() {
     return {
-      helloMsg: 'Hello world!',
-      someText: 'Welcome to your Vue.js app!',
       users: []
     };
   },
@@ -12149,7 +12148,7 @@ exports.default = {
   }
 };
 if (module.exports.__esModule) module.exports = module.exports.default
-;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n  <div class=\"container\" id=\"app-body\">\n    <div class=\"jumbotron\">\n\t\t\t<hello :msg=\"helloMsg\"></hello>\n      <p>{{{ someText }}}</p>\n    </div>cssdfc\n    <div>\n      <div class=\"form-group\">\n        <label for=\"hello\" class=\"col-sm-2 control-label\">Hello:</label> \n        <div class=\"col-sm-10\">\n          <input id=\"sometext\" v-model=\"helloMsg\" class=\"form-control\">\n        </div>\n      </div>\n      <div class=\"form-group\">\n        <label for=\"sometext\" class=\"col-sm-2 control-label\">Sometext:</label> \n        <div class=\"col-sm-10\">\n          <input id=\"sometext\" v-model=\"someText\" class=\"form-control\">\n        </div>\n      </div>\n    </div>\n\t\t<div>\n\t\t<button @click=\"getData\">Get Data</button>\n    <pre>{{ users | json }}</pre>\n\t\t</div>\n  </div>\n"
+;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n  <div class=\"container\" id=\"app-main\">\n      <hello :title=\"title\" :text=\"msg\"></hello>\n\t\t<div>\n\t\t<button @click=\"getData\">Get Data</button>\n    <pre>{{ users | json }}</pre>\n\t\t</div>\n  </div>\n"
 if (module.hot) {(function () {  module.hot.accept()
   var hotAPI = require("vue-hot-reload-api")
   hotAPI.install(require("vue"), true)
@@ -12199,10 +12198,10 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = {
-  props: ['msg']
+  props: ['title', 'text']
 };
 if (module.exports.__esModule) module.exports = module.exports.default
-;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<div class=\"hello\" _v-de9e0f30=\"\">\n  <h1 _v-de9e0f30=\"\">{{ msg }}</h1>\n</div>\n"
+;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<div class=\"jumbotron\" _v-de9e0f30=\"\">\n\t\t\t<div class=\"hello\" _v-de9e0f30=\"\">\n        <h1 _v-de9e0f30=\"\">{{ title }}</h1>\n      </div>\n      <p _v-de9e0f30=\"\">{{{ text }}}</p>\n    </div>\n    <div _v-de9e0f30=\"\">\n      <div class=\"form-group\" _v-de9e0f30=\"\">\n        <label for=\"hello\" class=\"col-sm-2 control-label\" _v-de9e0f30=\"\">Hello:</label> \n        <div class=\"col-sm-10\" _v-de9e0f30=\"\">\n          <input id=\"sometext\" v-model=\"title\" class=\"form-control\" _v-de9e0f30=\"\">\n        </div>\n      </div>\n      <div class=\"form-group\" _v-de9e0f30=\"\">\n        <label for=\"sometext\" class=\"col-sm-2 control-label\" _v-de9e0f30=\"\">Sometext:</label> \n        <div class=\"col-sm-10\" _v-de9e0f30=\"\">\n          <input id=\"sometext\" v-model=\"text\" class=\"form-control\" _v-de9e0f30=\"\">\n        </div>\n      </div>\n    </div>\n  \n"
 if (module.hot) {(function () {  module.hot.accept()
   var hotAPI = require("vue-hot-reload-api")
   hotAPI.install(require("vue"), true)

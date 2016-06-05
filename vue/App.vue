@@ -1,23 +1,6 @@
 <template>
-  <div class="container" id="app-body">
-    <div class="jumbotron">
-			<hello :msg="helloMsg"></hello>
-      <p>{{{ someText }}}</p>
-    </div>cssdfc
-    <div>
-      <div class="form-group">
-        <label for="hello" class="col-sm-2 control-label">Hello:</label> 
-        <div class="col-sm-10">
-          <input id="sometext" v-model="helloMsg" class="form-control" >
-        </div>
-      </div>
-      <div class="form-group">
-        <label for="sometext" class="col-sm-2 control-label">Sometext:</label> 
-        <div class="col-sm-10">
-          <input id="sometext" v-model="someText" class="form-control" >
-        </div>
-      </div>
-    </div>
+  <div class="container" id="app-main">
+      <hello :title="title" :text="msg"></hello>
 		<div>
 		<button @click="getData">Get Data</button>
     <pre>{{ users | json }}</pre>
@@ -32,14 +15,13 @@ export default {
   components: {
     Hello
   },
+  props: ['title', 'msg'],
   data () {
     return {
       // note: changing this line won't causes changes
       // with hot-reload because the reloaded component
       // preserves its current state and we are modifying
       // its initial state.
-      helloMsg: 'Hello world!',
-      someText: 'Welcome to your Vue.js app!',
       users: []
     }
   },
