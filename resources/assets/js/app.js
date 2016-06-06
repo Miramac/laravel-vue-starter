@@ -1,1 +1,1 @@
-require('../../../vue/app')
+require('../../views/vue/app')

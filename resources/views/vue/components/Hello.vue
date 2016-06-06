@@ -24,7 +24,12 @@
 
 <script>
 export default {
-  props: ['title', 'text']
+  data () {
+    return {
+      title: 'Laravel Vue',
+      text: 'Welcome!'
+    }
+  }
 }
 </script>
 

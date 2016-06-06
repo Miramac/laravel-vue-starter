@@ -14,4 +14,9 @@
         </div>
     </div>
 </div>
+<div class="container">
+    <div class="row">   
+        <router-view></router-view>
+  </div>
+</div>
 @endsection

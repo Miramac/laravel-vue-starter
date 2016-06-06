@@ -9,6 +9,9 @@
 </template>
 
 <script>
+import View1 from './components/View1.vue'
+import View2 from './components/View2.vue'
+
 import Hello from './components/Hello.vue'
 
 export default {
