@@ -11,14 +11,22 @@
 |
 */
 
-
-// welcome page
+const API_ROUTE_PREFIX = '/api/v1/';
 
 Route::group(['middleware' => 'web'], function() {
     Route::auth();
-    Route::get('/', 'ViewController@index');
 
-    Route::get('/api/users', function () {
-        return [['id' => 1, 'name' => 'Fabi'], ['id' => 2, 'name' => 'Peter']];
+    //the defaule route for the vue app
+    Route::get('/', function () {
+        if(Auth::check()){
+            return view('default');
+        } else {
+            return view('welcome');
+        }
     });
+
+    //** API routes
+    Route::resource(API_ROUTE_PREFIX.'user', 'UserController', ['only' => [
+        'index', 'show'
+    ]]);
 });
