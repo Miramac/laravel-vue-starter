@@ -1,1 +1,2 @@
-require('../../views/vue/app')
+// load the vue.js app file and components
+require('../../views/app')

@@ -3,9 +3,7 @@
 @section('content')
 <div class="container">
     <div class="row">   
-        <div class="jumbotron">
-            <h1>Laravel Vue</h1>
-        </div>
-    </div>
+        <router-view></router-view>
+  </div>
 </div>
 @endsection

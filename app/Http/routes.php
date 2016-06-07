@@ -11,14 +11,14 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+
+// welcome page
+
+Route::group(['middleware' => 'web'], function() {
+    Route::auth();
+    Route::get('/', 'ViewController@index');
+
+    Route::get('/api/users', function () {
+        return [['id' => 1, 'name' => 'Fabi'], ['id' => 2, 'name' => 'Peter']];
+    });
 });
-
-Route::get('/api/users', function () {
-    return [['id' => 1, 'name' => 'Fabi'], ['id' => 2, 'name' => 'Peter']];
-});
-
-Route::auth();
-
-Route::get('/home', 'HomeController@index');
