@@ -19,7 +19,6 @@
         <div class="collapse navbar-collapse" id="app-navbar-collapse">
             <!-- Left Side Of Navbar -->
             <ul class="nav navbar-nav">
-                <li><a href="{{ url('/home') }}">Home</a></li>
                 <li><a v-link="{ path: 'view1' }">View1</a></li>
                 <li><a v-link="{ path: 'view2' }">View2</a></li>
             </ul>
