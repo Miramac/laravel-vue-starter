@@ -3,7 +3,7 @@
   "scripts": {
     "prod": "gulp --production",
     "dev": "gulp watch",
-    "serve": "php artisan serve --host=dev"
+    "serve": "gulp && php artisan serve --host=dev"
   },
   "devDependencies": {
     "babel-core": "^6.9.1",
