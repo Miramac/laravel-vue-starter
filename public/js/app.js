@@ -14818,9 +14818,9 @@ exports.insert = function (css) {
 },{}],7:[function(require,module,exports){
 'use strict';
 
-require('../../views/vue/app');
+require('../../views/app');
 
-},{"../../views/vue/app":8}],8:[function(require,module,exports){
+},{"../../views/app":8}],8:[function(require,module,exports){
 'use strict';
 
 var _vue = require('vue');
@@ -14875,7 +14875,7 @@ router.start(App, '#app');
 
 },{"./components/Hello.vue":9,"./components/View1.vue":10,"./components/View2.vue":11,"vue":5,"vue-resource":3,"vue-router":4}],9:[function(require,module,exports){
 var __vueify_insert__ = require("vueify/lib/insert-css")
-var __vueify_style__ = __vueify_insert__.insert("\nh1[_v-7060daad] {\n  color: #42b983;\n}\n")
+var __vueify_style__ = __vueify_insert__.insert("\nh1[_v-614c9b97] {\n  color: #42b983;\n}\n")
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -14890,19 +14890,19 @@ exports.default = {
   }
 };
 if (module.exports.__esModule) module.exports = module.exports.default
-;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<div class=\"jumbotron\" _v-7060daad=\"\">\n\t\t\t<div class=\"hello\" _v-7060daad=\"\">\n        <h1 _v-7060daad=\"\">{{ title }}</h1>\n      </div>\n      <p _v-7060daad=\"\">{{{ text }}}</p>\n    </div>\n    <div _v-7060daad=\"\">\n      <div class=\"form-group\" _v-7060daad=\"\">\n        <label for=\"hello\" class=\"col-sm-2 control-label\" _v-7060daad=\"\">Hello:</label> \n        <div class=\"col-sm-10\" _v-7060daad=\"\">\n          <input id=\"sometext\" v-model=\"title\" class=\"form-control\" _v-7060daad=\"\">\n        </div>\n      </div>\n      <div class=\"form-group\" _v-7060daad=\"\">\n        <label for=\"sometext\" class=\"col-sm-2 control-label\" _v-7060daad=\"\">Sometext:</label> \n        <div class=\"col-sm-10\" _v-7060daad=\"\">\n          <input id=\"sometext\" v-model=\"text\" class=\"form-control\" _v-7060daad=\"\">\n        </div>\n      </div>\n    </div>\n  \n"
+;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<div class=\"jumbotron\" _v-614c9b97=\"\">\n\t\t\t<div class=\"hello\" _v-614c9b97=\"\">\n        <h1 _v-614c9b97=\"\">{{ title }}</h1>\n      </div>\n      <p _v-614c9b97=\"\">{{{ text }}}</p>\n    </div>\n    <div _v-614c9b97=\"\">\n      <div class=\"form-group\" _v-614c9b97=\"\">\n        <label for=\"hello\" class=\"col-sm-2 control-label\" _v-614c9b97=\"\">Hello:</label> \n        <div class=\"col-sm-10\" _v-614c9b97=\"\">\n          <input id=\"sometext\" v-model=\"title\" class=\"form-control\" _v-614c9b97=\"\">\n        </div>\n      </div>\n      <div class=\"form-group\" _v-614c9b97=\"\">\n        <label for=\"sometext\" class=\"col-sm-2 control-label\" _v-614c9b97=\"\">Sometext:</label> \n        <div class=\"col-sm-10\" _v-614c9b97=\"\">\n          <input id=\"sometext\" v-model=\"text\" class=\"form-control\" _v-614c9b97=\"\">\n        </div>\n      </div>\n    </div>\n  \n"
 if (module.hot) {(function () {  module.hot.accept()
   var hotAPI = require("vue-hot-reload-api")
   hotAPI.install(require("vue"), true)
   if (!hotAPI.compatible) return
   module.hot.dispose(function () {
-    __vueify_insert__.cache["\nh1[_v-7060daad] {\n  color: #42b983;\n}\n"] = false
+    __vueify_insert__.cache["\nh1[_v-614c9b97] {\n  color: #42b983;\n}\n"] = false
     document.head.removeChild(__vueify_style__)
   })
   if (!module.hot.data) {
-    hotAPI.createRecord("_v-7060daad", module.exports)
+    hotAPI.createRecord("_v-614c9b97", module.exports)
   } else {
-    hotAPI.update("_v-7060daad", module.exports, (typeof module.exports === "function" ? module.exports.options : module.exports).template)
+    hotAPI.update("_v-614c9b97", module.exports, (typeof module.exports === "function" ? module.exports.options : module.exports).template)
   }
 })()}
 },{"vue":5,"vue-hot-reload-api":2,"vueify/lib/insert-css":6}],10:[function(require,module,exports){
@@ -14932,9 +14932,9 @@ if (module.hot) {(function () {  module.hot.accept()
     document.head.removeChild(__vueify_style__)
   })
   if (!module.hot.data) {
-    hotAPI.createRecord("_v-6e98c1f2", module.exports)
+    hotAPI.createRecord("_v-8cc1401e", module.exports)
   } else {
-    hotAPI.update("_v-6e98c1f2", module.exports, (typeof module.exports === "function" ? module.exports.options : module.exports).template)
+    hotAPI.update("_v-8cc1401e", module.exports, (typeof module.exports === "function" ? module.exports.options : module.exports).template)
   }
 })()}
 },{"vue":5,"vue-hot-reload-api":2,"vueify/lib/insert-css":6}],11:[function(require,module,exports){
@@ -14964,9 +14964,9 @@ if (module.hot) {(function () {  module.hot.accept()
     document.head.removeChild(__vueify_style__)
   })
   if (!module.hot.data) {
-    hotAPI.createRecord("_v-6e7c92f0", module.exports)
+    hotAPI.createRecord("_v-8ca5111c", module.exports)
   } else {
-    hotAPI.update("_v-6e7c92f0", module.exports, (typeof module.exports === "function" ? module.exports.options : module.exports).template)
+    hotAPI.update("_v-8ca5111c", module.exports, (typeof module.exports === "function" ? module.exports.options : module.exports).template)
   }
 })()}
 },{"vue":5,"vue-hot-reload-api":2,"vueify/lib/insert-css":6}]},{},[7]);
