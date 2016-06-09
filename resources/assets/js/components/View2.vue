@@ -1,19 +1,26 @@
 <template>
-  <h1>{{ title }}</h1>
+  <div class="container">
+    <div class="row">
+      <h1>{{ title }}</h1>
+    </div>
+  </div>
 </template>
 
 <script>
-
-export default {
-  components: {
-  },
-  data () {
-    return {title: 'View 2'}
-  },
-  methods: {
+  export default {
+    components: {
+    },
+    data () {
+      return {title: 'View 2'}
+    },
+    methods: {
+    }
   }
-}
 </script>
 
-<style>
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+h1 {
+  color: #f2b983;
+}
 </style>

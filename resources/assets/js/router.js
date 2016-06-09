@@ -3,8 +3,11 @@ import VueResource from 'vue-resource'
 Vue.use(VueResource)
 import VueRouter from 'vue-router'
 Vue.use(VueRouter)
+Vue.http.headers.common['X-CSRF-TOKEN'] = document.querySelector('#csrf-token').getAttribute('content')
+Vue.http.options.emulateJSON = true
 
 // import App from './App.vue'
+import Login from './components/auth/Login.vue'
 import View1 from './components/View1.vue'
 import View2 from './components/View2.vue'
 import Hello from './components/Hello.vue'
@@ -28,6 +31,9 @@ var router = new VueRouter()
 router.map({
   '/': {
     component: {} // a empty view
+  },
+  '/login': {
+    component: Login
   },
   '/view1': {
     component: View1

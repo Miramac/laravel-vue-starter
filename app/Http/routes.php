@@ -13,20 +13,24 @@
 
 const API_ROUTE_PREFIX = '/api/v1/';
 
+/*Route::group(['middleware' => 'auth'], function() {
+    Route::post('/auth/login', 'AuthController@authenticate');
+});*/
+
 Route::group(['middleware' => 'web'], function() {
+    Route::post('/auth/login', 'Auth\AuthController@authenticate');
+
     Route::auth();
 
     //the defaule route for the vue app
     Route::get('/', function () {
-        if(Auth::check()){
-            return view('default');
-        } else {
-            return view('welcome');
-        }
+        return view('default');
     });
 
     //** API routes
     Route::resource(API_ROUTE_PREFIX.'user', 'UserController', ['only' => [
         'index', 'show'
     ]]);
+
+
 });
