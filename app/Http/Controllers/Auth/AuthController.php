@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Auth;
 use App\User;
 use Validator;
 use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 
@@ -69,4 +70,14 @@ class AuthController extends Controller
             'password' => bcrypt($data['password']),
         ]);
     }
+
+        public function login(Request $request)
+        {
+            if(!auth()->attempt($credentials, $remember))
+            { 
+                return abort(406);
+            }
+            // else user is logged in
+            return redirect()->intended();
+        }
 }

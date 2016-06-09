@@ -6,6 +6,9 @@ Vue.use(VueRouter)
 Vue.http.headers.common['X-CSRF-TOKEN'] = document.querySelector('#csrf-token').getAttribute('content')
 Vue.http.options.emulateJSON = true
 
+// vue-strap components
+import Dropdown from 'vue-strap/src/Dropdown.vue'
+
 // import App from './App.vue'
 import Login from './components/auth/Login.vue'
 import View1 from './components/View1.vue'
@@ -46,4 +49,4 @@ router.map({
 // Now we can start the app!
 // The router will create an instance of App and mount to
 // the element matching the selector #app.
-router.start({ App, components: { Hello } }, '#app')
+router.start({ App, components: { Hello, Dropdown } }, '#app')

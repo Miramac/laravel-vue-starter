@@ -13,12 +13,12 @@
 
 const API_ROUTE_PREFIX = '/api/v1/';
 
-/*Route::group(['middleware' => 'auth'], function() {
-    Route::post('/auth/login', 'AuthController@authenticate');
-});*/
+Route::group(['middleware' => 'auth'], function() {
+    Route::post('/auth/login', 'Auth\AuthController@authenticate');
+});
 
 Route::group(['middleware' => 'web'], function() {
-    Route::post('/auth/login', 'Auth\AuthController@authenticate');
+    //Route::post('/auth/login', 'Auth\AuthController@authenticate');
 
     Route::auth();
 

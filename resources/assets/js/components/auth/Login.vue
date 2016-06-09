@@ -60,7 +60,7 @@ export default {
     }
   },
   methods: {
-    submitLogin: function (e, d) {
+    submitLogin (e, d) {
         console.log(this.login.email, this.login.password, this.login.remember)
         this.$http.post('login', {
           email: this.login.email,
@@ -68,7 +68,7 @@ export default {
           remember: this.login.remember
         }).then(
         (data) => {
-          router.go('/');
+          console.error(data.data)
         },
         (data) => {
           console.error(data.data)
