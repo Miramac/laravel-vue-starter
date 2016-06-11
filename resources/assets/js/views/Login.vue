@@ -10,7 +10,7 @@
                             <label for="email" class="col-md-4 control-label">E-Mail Address</label>
 
                             <div class="col-md-6">
-                                <input id="email" type="email" class="form-control" name="email" v-model="login.email" placeholder="E-Mail">
+                                <input id="email" type="email" class="form-control" name="email" v-model="credentials.email" placeholder="E-Mail">
                             </div>
                         </div>
 
@@ -18,7 +18,7 @@
                             <label for="password" class="col-md-4 control-label">Password</label>
 
                             <div class="col-md-6">
-                                <input id="password" type="password" class="form-control" name="password" v-model="login.password" placeholder="Password">
+                                <input id="password" type="password" class="form-control" name="password" v-model="credentials.password" placeholder="Password">
                             </div>
                         </div>
 
@@ -26,7 +26,7 @@
                             <div class="col-md-6 col-md-offset-4">
                                 <div class="checkbox">
                                     <label>
-                                        <input type="checkbox" name="remember" v-model="login.remember" > Remember Me
+                                        <input type="checkbox" name="remember" v-model="remember" > Remember Me
                                     </label>
                                 </div>
                             </div>
@@ -52,23 +52,22 @@ export default {
   data () {
     return {
       title: 'Login',
-      login: {
+      credentials: {
         email: '',
-        password: '',
-        remember: false
-      }
+        password: ''
+      },
+    remember: false
     }
   },
   methods: {
     submitLogin (e, d) {
-        console.log(this.login.email, this.login.password, this.login.remember)
         this.$http.post('login', {
-          email: this.login.email,
-          password: this.login.password,
-          remember: this.login.remember
+            credentials :  this.credentials,
+            remember: this.remember
         }).then(
         (data) => {
-          console.error(data.data)
+            console.log(data.data)
+            //this.$route.router.go('/');
         },
         (data) => {
           console.error(data.data)

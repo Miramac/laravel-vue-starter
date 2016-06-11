@@ -10,7 +10,7 @@ Vue.http.options.emulateJSON = true
 import Dropdown from 'vue-strap/src/Dropdown.vue'
 
 // import App from './App.vue'
-import Login from './components/auth/Login.vue'
+import Login from './views/Login.vue'
 import View1 from './components/View1.vue'
 import View2 from './components/View2.vue'
 import Hello from './components/Hello.vue'
