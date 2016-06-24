@@ -76,12 +76,16 @@ class AuthController extends Controller
             if(!auth()->attempt($request->credentials, $request->remember))
             { 
                 return [
-                    'code' => null,
+                    'code' => 400,
                     'message' => 'Login failed',
                     'description' => 'Wrong username/password.'
                 ];
+            } else 
+            {
+                return [
+                    'code' => 200,
+                    'message' => 'Login OK'
+                ];
             }
-            // else user is logged in
-            return redirect()->intended();
         }
 }
